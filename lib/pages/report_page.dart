@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-const Color darkBluecolor = Color(0xFF083F6D);
+import 'package:medic_map/utils/themes.dart';
 
 class ReportScreen extends StatelessWidget {
   const ReportScreen({super.key});
@@ -10,35 +9,35 @@ class ReportScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[350],
       appBar: AppBar(
-        backgroundColor: darkBluecolor,
-        title: const Text('Report', style: TextStyle(color: Colors.white)),
-        automaticallyImplyLeading: false,
+        title: const Text(
+          'Report',
+        ),
       ),
-      body: const SingleChildScrollView(
-        padding: EdgeInsets.all(16.0),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
-            Text(
+            const Text(
               'Hospital: Marvel Hospital',
               style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8.0),
-            Text(
+            const SizedBox(height: 8.0),
+            const Text(
               'Address: Skull Island',
               style: TextStyle(fontSize: 16.0),
             ),
-            SizedBox(height: 8.0),
-            Text(
+            const SizedBox(height: 8.0),
+            const Text(
               'Doctor: Tony Stark',
               style: TextStyle(fontSize: 16.0),
             ),
-            SizedBox(height: 8.0),
+            const SizedBox(height: 8.0),
             Divider(
-              color: darkBluecolor,
+              color: MyTheme.baseColor,
               thickness: 3.0,
             ),
           ],

@@ -32,7 +32,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.pages), label: 'Report'),
+          BottomNavigationBarItem(icon: Icon(Icons.insert_drive_file_outlined), label: 'Report'),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), label: 'Profile')
         ],

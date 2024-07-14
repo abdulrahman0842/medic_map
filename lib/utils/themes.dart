@@ -12,5 +12,9 @@ class MyTheme {
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 23),
           iconTheme: IconThemeData(color: Colors.white)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          selectedItemColor: baseColor, unselectedItemColor: Colors.grey));
+          selectedItemColor: baseColor, unselectedItemColor: Colors.grey),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ButtonStyle(
+        backgroundColor: MaterialStatePropertyAll(baseColor),
+      )));
 }
