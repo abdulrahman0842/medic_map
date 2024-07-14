@@ -14,9 +14,9 @@ class CustomBottomNavigationBar extends StatefulWidget {
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   int selectedIndex = 0;
   List<Widget> widgets = [
-    HospitalList(),
-    ReportScreen(),
-    ProfilePage(),
+    const HospitalList(),
+    const ReportScreen(),
+    const ProfilePage(),
   ];
 
   void onTapped(int index) {
@@ -37,8 +37,6 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
               icon: Icon(Icons.account_circle), label: 'Profile')
         ],
         currentIndex: selectedIndex,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.grey,
         onTap: onTapped,
       ),
     );

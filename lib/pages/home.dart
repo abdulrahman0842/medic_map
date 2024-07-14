@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-const Color darkBluecolor = Color(0xFF083F6D);
-
 class HospitalList extends StatefulWidget {
   const HospitalList({
     super.key,
@@ -59,18 +57,11 @@ class _HospitalListState extends State<HospitalList> {
       appBar: AppBar(
         title: const Text(
           'Home',
-          style: TextStyle(
-            color: Colors.white, // Change text color here
-            fontWeight: FontWeight.bold, // Make text bold
-          ),
         ),
-        backgroundColor: darkBluecolor,
-        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             icon: const Icon(
               Icons.search,
-              color: Colors.white,
             ),
             onPressed: () {},
           ),
@@ -88,16 +79,19 @@ class _HospitalListState extends State<HospitalList> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    ClipRRect(
-                      borderRadius: const BorderRadius.vertical(
-                        top: Radius.circular(12),
-                      ),
-                      child: Image.asset(
-                        hospitalImages[index],
-                        fit: BoxFit.cover,
-                        height: 200,
-                      ),
-                    ),
+                    const ClipRRect(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(12),
+                        ),
+                        child:
+                            // Image.asset(
+                            //   hospitalImages[index],
+                            //   fit: BoxFit.cover,
+                            //   height: 200,
+                            // ),
+                            Placeholder(
+                          fallbackHeight: 200,
+                        )),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
                       child: Column(
